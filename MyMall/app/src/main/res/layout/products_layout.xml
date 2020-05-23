@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="20dp"
+    android:layout_marginStart="15dp"
+    android:layout_marginEnd="15dp"
+    app:cardElevation="15dp">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/Product_Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Product Name"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:fontFamily="sans-serif-medium"/>
+    <ImageView
+        android:id="@+id/Product_Image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/Product_Name"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="2dp"
+        android:contentDescription="TODO" />
+    <TextView
+        android:id="@+id/Product_Price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Product Price"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        android:layout_below="@id/Product_Image"
+        android:textColor="#000"
+        android:fontFamily="sans-serif-medium"/>
+    <TextView
+        android:id="@+id/Product_Descreption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Product Descreption"
+        android:textAlignment="center"
+        android:textSize="16dp"
+        android:layout_below="@id/Product_Price"
+        android:textColor="#000"
+        android:layout_marginTop="2dp"
+        android:fontFamily="sans-serif-medium"/>
+</RelativeLayout>
+</androidx.cardview.widget.CardView>
